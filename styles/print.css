@@ -1,0 +1,30 @@
+/*h1 {font-size: 10%;}*/
+
+nav, footer, video {
+  display: none;
+}
+
+a:after {
+  content: " (" attr(href) ")";
+  font-size: 80%;
+}
+
+a[href^="http://"]:after, a[href^="https://"]:after {
+  content: "  (" attr(href) ")";
+}
+
+a[href^="#"]:after {
+  content: "";
+}
+
+body {
+  padding: 0;
+  }
+
+.container {
+  width: 100%;
+}
+
+article {
+  width: 90%;
+}
